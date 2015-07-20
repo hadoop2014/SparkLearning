@@ -52,10 +52,6 @@ object KafkaWordCount {
 
     val argsT = Array("master:2181","myGroup","word_count","1")
     val Array(zkQuorum, group, topics, numThreads) = argsT
-    println(zkQuorum)
-    println(group)
-    println(topics)
-    println(numThreads)
     val sparkConf = new SparkConf().setAppName("KafkaWordCount")
     sparkConf.setMaster("spark://Master:7077").set("spark.driver.host","192.168.94.1").set("spark.cores.max","2")
     sparkConf.set("spark.eventLog.enabled","true").set("spark.eventLog.dir","hdfs://Master:9000/tmp/spark-events")
@@ -78,7 +74,18 @@ object KafkaWordCount {
     val wordCounts = words.map(x => (x, 1L))
       .reduceByKeyAndWindow(_ + _, _ - _, Seconds(10), Seconds(2), numThreads.toInt)
     wordCounts.print()
-    words.foreachRDD(x => x.foreachPartition(y => y.foreach(println)))
+    val keysCount = keys.countByWindow(Seconds(10),Seconds(2))
+    keysCount.print()
+    /*wordCounts.foreachRDD(rdd => {
+      rdd.foreachPartition(partitionOfRecords => {
+        partitionOfRecords.foreach(pair => {
+          val word = pair._1
+          val Count = pair._2
+          println(s"word:$word,Count:$Count")
+        })
+      })
+    })
+    */
 
     ssc.start()
     ssc.awaitTermination()
