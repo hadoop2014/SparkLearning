@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact build-on-make="true" name="sparklearning:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/sparklearning_jar</output-path>
+    <root id="root">
+      <element id="archive" name="sparklearning.jar">
+        <element id="module-output" name="sparklearning" />
+      </element>
+      <element id="library" level="project" name="SBT: org.apache.spark:spark-streaming-kafka_2.10:1.4.0:jar" />
+      <element id="library" level="project" name="SBT: org.apache.kafka:kafka_2.10:0.8.2.1:jar" />
+      <element id="library" level="project" name="SBT: net.sf.json-lib:json-lib:2.4:jar" />
+      <element id="library" level="project" name="SBT: net.sf.ezmorph:ezmorph:1.0.6:jar" />
+      <element id="library" level="project" name="SBT: com.101tec:zkclient:0.3:jar" />
+      <element id="library" level="project" name="SBT: com.yammer.metrics:metrics-core:2.2.0:jar" />
+      <element id="library" level="project" name="SBT: org.apache.kafka:kafka-clients:0.8.2.1:jar" />
+    </root>
+  </artifact>
+</component>

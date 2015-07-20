@@ -5,18 +5,26 @@
 [debug] 	refresh = false
 [debug] resolving dependencies for configuration 'compile'
 [debug] == resolving dependencies for default#sparklearning-build;0.1-SNAPSHOT [compile]
+[debug] == resolving dependencies default#sparklearning-build;0.1-SNAPSHOT->com.eed3si9n#sbt-assembly;0.11.2 [compile->default(compile)]
+[info] Resolving com.eed3si9n#sbt-assembly;0.11.2 ...
+[debug] sbt-chain: Checking cache for: dependency: com.eed3si9n#sbt-assembly;0.11.2 {compile=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: com.eed3si9n#sbt-assembly;0.11.2
+[debug] 	typesafe-ivy-releases: revision in cache: com.eed3si9n#sbt-assembly;0.11.2
+[debug] 	found com.eed3si9n#sbt-assembly;0.11.2 in sbt-chain
 [debug] resolving dependencies for configuration 'runtime'
 [debug] == resolving dependencies for default#sparklearning-build;0.1-SNAPSHOT [runtime]
 [debug] == resolving dependencies for default#sparklearning-build;0.1-SNAPSHOT [compile]
+[debug] == resolving dependencies default#sparklearning-build;0.1-SNAPSHOT->com.eed3si9n#sbt-assembly;0.11.2 [compile->default(compile)]
 [debug] resolving dependencies for configuration 'test'
 [debug] == resolving dependencies for default#sparklearning-build;0.1-SNAPSHOT [test]
 [debug] == resolving dependencies for default#sparklearning-build;0.1-SNAPSHOT [runtime]
 [debug] == resolving dependencies for default#sparklearning-build;0.1-SNAPSHOT [compile]
+[debug] == resolving dependencies default#sparklearning-build;0.1-SNAPSHOT->com.eed3si9n#sbt-assembly;0.11.2 [compile->default(compile)]
 [debug] resolving dependencies for configuration 'provided'
 [debug] == resolving dependencies for default#sparklearning-build;0.1-SNAPSHOT [provided]
 [debug] == resolving dependencies default#sparklearning-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->default(compile)]
 [info] Resolving org.scala-lang#scala-library;2.10.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4b8f9b88
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2ab268f1
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.4
 [debug] 	typesafe-ivy-releases: revision in cache: org.scala-lang#scala-library;2.10.4
 [debug] 	found org.scala-lang#scala-library;2.10.4 in sbt-chain
@@ -574,6 +582,7 @@
 [debug] resolving dependencies for configuration 'compile-internal'
 [debug] == resolving dependencies for default#sparklearning-build;0.1-SNAPSHOT [compile-internal]
 [debug] == resolving dependencies for default#sparklearning-build;0.1-SNAPSHOT [compile]
+[debug] == resolving dependencies default#sparklearning-build;0.1-SNAPSHOT->com.eed3si9n#sbt-assembly;0.11.2 [compile->default(compile)]
 [debug] == resolving dependencies for default#sparklearning-build;0.1-SNAPSHOT [optional]
 [debug] == resolving dependencies for default#sparklearning-build;0.1-SNAPSHOT [provided]
 [debug] == resolving dependencies default#sparklearning-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->default(compile)]
@@ -904,12 +913,14 @@
 [debug] == resolving dependencies for default#sparklearning-build;0.1-SNAPSHOT [runtime-internal]
 [debug] == resolving dependencies for default#sparklearning-build;0.1-SNAPSHOT [runtime]
 [debug] == resolving dependencies for default#sparklearning-build;0.1-SNAPSHOT [compile]
+[debug] == resolving dependencies default#sparklearning-build;0.1-SNAPSHOT->com.eed3si9n#sbt-assembly;0.11.2 [compile->default(compile)]
 [debug] == resolving dependencies for default#sparklearning-build;0.1-SNAPSHOT [optional]
 [debug] resolving dependencies for configuration 'test-internal'
 [debug] == resolving dependencies for default#sparklearning-build;0.1-SNAPSHOT [test-internal]
 [debug] == resolving dependencies for default#sparklearning-build;0.1-SNAPSHOT [test]
 [debug] == resolving dependencies for default#sparklearning-build;0.1-SNAPSHOT [runtime]
 [debug] == resolving dependencies for default#sparklearning-build;0.1-SNAPSHOT [compile]
+[debug] == resolving dependencies default#sparklearning-build;0.1-SNAPSHOT->com.eed3si9n#sbt-assembly;0.11.2 [compile->default(compile)]
 [debug] == resolving dependencies for default#sparklearning-build;0.1-SNAPSHOT [optional]
 [debug] == resolving dependencies for default#sparklearning-build;0.1-SNAPSHOT [provided]
 [debug] == resolving dependencies default#sparklearning-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->default(compile)]
@@ -1289,6 +1300,7 @@
 [debug] == resolving dependencies default#sparklearning-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [scala-tool->optional(default)]
 [debug] 	resolved ivy file produced in cache
 [debug] :: downloading artifacts ::
+[debug] 	[NOT REQUIRED] com.eed3si9n#sbt-assembly;0.11.2!sbt-assembly.jar
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-library;2.10.4!scala-library.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#sbt;0.13.5!sbt.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#main;0.13.5!main.jar
@@ -1337,7 +1349,7 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.5!apply-macro.jar
 [debug] 	[NOT REQUIRED] org.scala-lang#jline;2.10.4!jline.jar
 [debug] 	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar
-[debug] :: resolution report :: resolve 1999ms :: artifacts dl 55ms
+[debug] :: resolution report :: resolve 2844ms :: artifacts dl 88ms
 [debug] 	report for default#sparklearning-build;0.1-SNAPSHOT compile produced in D:\BigdataResearch\SparkLearning\project\target\resolution-cache\reports\default-sparklearning-build-compile.xml
 [debug] 	report for default#sparklearning-build;0.1-SNAPSHOT runtime produced in D:\BigdataResearch\SparkLearning\project\target\resolution-cache\reports\default-sparklearning-build-runtime.xml
 [debug] 	report for default#sparklearning-build;0.1-SNAPSHOT test produced in D:\BigdataResearch\SparkLearning\project\target\resolution-cache\reports\default-sparklearning-build-test.xml
@@ -1351,5 +1363,5 @@
 [debug] 	report for default#sparklearning-build;0.1-SNAPSHOT docs produced in D:\BigdataResearch\SparkLearning\project\target\resolution-cache\reports\default-sparklearning-build-docs.xml
 [debug] 	report for default#sparklearning-build;0.1-SNAPSHOT pom produced in D:\BigdataResearch\SparkLearning\project\target\resolution-cache\reports\default-sparklearning-build-pom.xml
 [debug] 	report for default#sparklearning-build;0.1-SNAPSHOT scala-tool produced in D:\BigdataResearch\SparkLearning\project\target\resolution-cache\reports\default-sparklearning-build-scala-tool.xml
-[debug] 	resolve done (1999ms resolve - 55ms download)
+[debug] 	resolve done (2844ms resolve - 88ms download)
 [info] Done updating.
