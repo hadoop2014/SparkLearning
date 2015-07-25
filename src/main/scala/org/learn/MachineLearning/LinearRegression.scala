@@ -1,10 +1,9 @@
-package org.learn
+package org.learn.MachineLearning
 
-import org.apache.spark.{SparkContext, SparkConf}
 import org.apache.spark.mllib.linalg.Vectors
-import org.apache.spark.mllib.regression.LabeledPoint
-import org.apache.spark.mllib.regression.LinearRegressionWithSGD
+import org.apache.spark.mllib.regression.{LabeledPoint, LinearRegressionWithSGD}
 import org.apache.spark.mllib.stat.Statistics
+import org.apache.spark.{SparkConf, SparkContext}
 import org.learn.database.LogSupport
 
 object LinearRegression extends  App with LogSupport{
