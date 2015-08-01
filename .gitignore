@@ -4,3 +4,8 @@
 /logs
 /data
 /out
+src/main/resources/serviceaddress.conf
+src/main/scala/org/learn/HDFS/HdfsManager.scala
+src/main/scala/org/learn/HDFS/HdfsSupport.scala
+src/main/scala/org/learn/HDFS/Using.scala
+src/main/scala/org/learn/database

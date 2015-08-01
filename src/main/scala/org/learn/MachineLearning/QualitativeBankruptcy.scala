@@ -21,23 +21,24 @@ object QualitativeBankruptcy {
 
     val sparkContext = new SparkContext(conf)
 
-    val data = sparkContext.textFile("data/Qualitative_Bankruptcy/Qualitative_Bankruptcy.data.txt")
+    val data = sparkContext.textFile("hdfs://master:9000/data/Bankruptcy/Qualitative_Bankruptcy.data.txt")
     val parsedData = data.map{line =>
       val parts = line.split(",")
       LabeledPoint(getDoubleValue(parts(6)),Vectors.dense(parts.slice(0,6).map(x=>getDoubleValue(x))))
     }
-    parsedData.foreach(println)
     //将parsedData的60%分为训练数据，40%分为测试数据
     val splits = parsedData.randomSplit(Array(0.8,0.2),seed = 11L)
     val trainingData = splits(0)
     val testData = splits(1)
-    testData.foreach(println)
     val model = new LogisticRegressionWithLBFGS().setNumClasses(2).run(trainingData)
 
     val labelAndPreds = testData.map{point =>
       val prediction = model.predict(point.features)
       (point.label,prediction)
     }
+
+     
+    println(labelAndPreds.toDebugString)
     val trainErr = labelAndPreds.filter(r => r._1 != r._2).count.toDouble/testData.count
     println(s"TrainError:$trainErr")
   }

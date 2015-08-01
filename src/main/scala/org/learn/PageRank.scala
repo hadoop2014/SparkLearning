@@ -11,7 +11,7 @@ object PageRank {
     conf.setMaster("spark://Master:7077").set("spark.driver.host", "192.168.94.1").set("spark.cores.max", "1")
       .set("spark.eventLog.enabled", "true").set("spark.eventLog.dir", "hdfs://Master:9000/tmp/spark-events")
       .set("spark.default.parallelism", "1") //.set("spark.serializer", "spark.KryoSerializer")
-    conf.setJars(List("D:\\BigdataResearch\\SparkLeaning\\out\\artifacts\\sparkleaning_jar\\sparkleaning.jar"))
+    conf.setJars(List("D:\\BigdataResearch\\SparkLearning\\out\\artifacts\\sparklearning_jar\\sparklearning.jar"))
     //conf.setMaster("local[*]")
     val context = new SparkContext(conf)
 
