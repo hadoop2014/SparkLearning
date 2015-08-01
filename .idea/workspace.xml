@@ -2,24 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fd49e749-0ae0-43c7-850d-c0288419c9c8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/org/learn/common/Constant.scala" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/org/learn/HDFS/HdfsManager.scala" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/org/learn/HDFS/HdfsSupport.scala" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/org/learn/HDFS/Using.scala" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/serviceaddress.conf" />
-      <change type="DELETED" beforePath="D:\BigdataResearch\SparkLearning\.idea\libraries\SBT__com_esotericsoftware_reflectasm_reflectasm_1_07_jar.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\BigdataResearch\SparkLearning\.idea\libraries\SBT__org_apache_avro_avro_mapred_1_7_7_jar.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\BigdataResearch\SparkLearning\.idea\libraries\SBT__org_apache_hadoop_hadoop_yarn_server_nodemanager_2_2_0_jar.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\BigdataResearch\SparkLearning\.idea\libraries\SBT__org_apache_mesos_mesos_0_21_1_jar.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\BigdataResearch\SparkLearning\.idea\libraries\SBT__org_eclipse_jetty_orbit_javax_activation_1_1_0_v201105071233_jar.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\BigdataResearch\SparkLearning\.idea\libraries\SBT__org_eclipse_jetty_orbit_javax_mail_glassfish_1_4_1_v201005082020_jar.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\BigdataResearch\SparkLearning\.idea\libraries\SBT__org_eclipse_jetty_orbit_javax_servlet_3_0_0_v201112011016_jar.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\BigdataResearch\SparkLearning\.idea\libraries\SBT__org_eclipse_jetty_orbit_javax_transaction_1_1_1_v201105210645_jar.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/org/learn/PageRank.scala" afterPath="$PROJECT_DIR$/src/main/scala/org/learn/PageRank.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/org/learn/MachineLearning/QualitativeBankruptcy.scala" afterPath="$PROJECT_DIR$/src/main/scala/org/learn/MachineLearning/QualitativeBankruptcy.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SparkLearning.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -57,21 +40,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="serviceaddress.conf" pinned="false" current-in-tab="true">
+      <file leaf-file-name="serviceaddress.conf" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/serviceaddress.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6785714" vertical-offset="0" max-vertical-offset="1140">
-              <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="57" max-vertical-offset="1140">
+              <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="304">
-              <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+            <state vertical-scroll-proportion="0.521978" vertical-offset="0" max-vertical-offset="364">
+              <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -1215,14 +1198,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="304">
-          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/org/learn/database/Executor.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="69" max-vertical-offset="2527">
@@ -1233,8 +1208,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/serviceaddress.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6785714" vertical-offset="0" max-vertical-offset="1140">
-          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="57" max-vertical-offset="1140">
+          <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.521978" vertical-offset="0" max-vertical-offset="364">
+          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
           <folding />
         </state>
       </provider>
