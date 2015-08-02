@@ -4,7 +4,7 @@ import org.apache.spark.mllib.linalg.Vectors
 import org.apache.spark.mllib.regression.{LabeledPoint, LinearRegressionWithSGD}
 import org.apache.spark.mllib.stat.Statistics
 import org.apache.spark.{SparkConf, SparkContext}
-import org.learn.database.LogSupport
+import org.learn.common.LogSupport
 
 object LinearRegression extends  App with LogSupport{
   val conf = new SparkConf().setAppName("LinearRegression")

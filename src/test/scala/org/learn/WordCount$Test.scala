@@ -1,7 +1,7 @@
 package org.learn
 
+import org.learn.common.LoadConfig
 import org.learn.database._
-import org.learn.database.SqlResult
 import org.scalatest.FlatSpec
 import org.scalatest.matchers.ShouldMatchers
 

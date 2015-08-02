@@ -1,5 +1,6 @@
 package org.learn
 
+import org.learn.common.LoadConfig
 import org.learn.database._
 
 import java.sql.{Connection,Statement,ResultSet}
